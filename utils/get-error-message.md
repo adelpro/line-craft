@@ -1,13 +1,16 @@
 # get-error-message
 
-```tsx
-export const getErrorMessage = (error: unknown): string => {
+```ts
+export const getErrorMessage = (
+  error: unknown,
+  customMessage?: string
+): string => {
   if (error instanceof Error) {
     return error.message;
   } else if (typeof error === 'string') {
     return error;
   } else {
-    return 'An unknown error occurred';
+    return customMessage || 'An unknown error occurred';
   }
 };
 ```
