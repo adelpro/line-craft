@@ -1,4 +1,4 @@
-#use-escape-key hook
+# use-escape-key hook
 
 ```tsx
 import { useCallback, useLayoutEffect } from 'react';
