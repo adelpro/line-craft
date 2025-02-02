@@ -1,6 +1,6 @@
 # lineCraft
 
-lineCraft is a curated, hand-made collection of React UI components, custom hooks, and utilities all built with TypeScript. Designed for performance and ease-of-use, lineCraft follows SOLID principles and modern best practices to empower developers with ready-to-use, lightweight building blocks for your web applications. No installation required, simply copy & paste the code into your project.
+lineCraft is a curated, hand-made collection of NextJS and React UI components, custom hooks, and utilities all built with TypeScript. Designed for performance and ease-of-use, lineCraft follows SOLID principles and modern best practices to empower developers with ready-to-use, lightweight building blocks for your web applications. No installation required, simply copy & paste the code into your project.
 
 ## Features
 
