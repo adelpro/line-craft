@@ -1,5 +1,11 @@
 # map-leaflet
 
+## install
+
+```batch
+npm install react-leaflet
+```
+
 ```tsx
 "use client";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
