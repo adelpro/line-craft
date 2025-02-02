@@ -1,7 +1,5 @@
 # Loader
 
-## Code
-
 ```tsx
 // components/Loader.tsx
 import Image from 'next/image';
@@ -14,6 +12,7 @@ interface LoaderProps {
   message?: string;
   size?: number;
   className?: string;
+  rightIcon?: boolean;
   textClassName?: string;
 }
 
@@ -21,13 +20,15 @@ const Loader: React.FC<LoaderProps> = ({
   message = '',
   size = 24,
   className = '',
+  rightIcon = false,
   textClassName = '',
 }) => {
   return (
     <div
       className={cn(
         'm-5 flex flex-row items-center justify-center gap-2',
-        className
+        className,
+        rightIcon && 'flex-row-reverse'
       )}
     >
       <Image
