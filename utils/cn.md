@@ -30,5 +30,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(...inputs));
 }
 
+```tsx
 // Example usage:
 const className = cn('bg-red-500', isActive && 'text-white', 'hover:bg-red-700');
+```
