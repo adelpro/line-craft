@@ -22,14 +22,6 @@ npm install clsx tailwind-merge
 
 ## How to Use
 
-```ts
-import clsx, { ClassValue } from 'clsx';
-import { twMerge } from 'tailwind-merge';
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(...inputs));
-}
-
 ```tsx
 // Example usage:
 const className = cn('bg-red-500', isActive && 'text-white', 'hover:bg-red-700');
