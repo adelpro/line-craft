@@ -106,3 +106,40 @@ export default function Dialog({
  - [cn() Helper](https://github.com/adelpro/line-craft/blob/main/utils/cn.md)
 
  - useLayoutEffect Hook (from React): The component uses useLayoutEffect for immediate DOM measurements when opening/closing. This ensures proper positioning before paint.
+
+ - TailwindCSS: for styling
+
+## How to Use
+
+To use the Dialog component, follow the example below:
+
+```tsx
+import React, { useRef } from 'react';
+import Dialog from './path/to/Dialog';
+
+function App() {
+  const dialogRef = useRef<HTMLDialogElement | null>(null);
+
+  const openDialog = () => {
+    dialogRef.current?.showModal();
+  };
+
+  return (
+    <div>
+      <button onClick={openDialog}>Open Dialog</button>
+      <Dialog ref={dialogRef} className="custom-class">
+        <p>This is a sample dialog content.</p>
+      </Dialog>
+    </div>
+  );
+}
+
+export default App;
+```
+
+In this example:
+
+    The Dialog component is imported and rendered.
+    A useRef hook is used to create a reference for the dialog.
+    A button is provided to open the dialog by calling the showModal method on the dialog reference.
+    The dialog contains sample content and can be styled with custom classes using the className prop.
